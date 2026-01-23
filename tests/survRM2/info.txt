@@ -1,0 +1,10 @@
+This test verifies the rmst2 function with no covariates passed from the survRM2 package.
+
+The following values are tested:
+ - RMST, sd(RMST), CI_low(RMST), CI_upp(RMST) 
+   (all values for both arms)
+ - RMTL, sd(RMTL), CI_low(RMTL), CI_upp(RMTL)
+   (all values for both arms)
+ - RMST-diff, CI_low(RMST-diff), CI_upp(RMST-diff), p-val(RMST-diff)
+ - RMST-ratio, CI_low(RMST-ratio), CI_upp(RMST-ratio), p-val(RMST-ratio)
+ - RMTL-ratio, CI_low(RMTL-ratio), CI_upp(RMTL-ratio), p-val(RMTL-ratio)
