@@ -1,0 +1,155 @@
+✔ | F W  S  OK | Context
+
+⠏ |          0 | blockrand-1.5                                                                                        
+⠼ |         15 | blockrand-1.5                                                                                        
+⠇ |         49 | blockrand-1.5                                                                                        
+⠼ |         75 | blockrand-1.5                                                                                        
+⠧ |        108 | blockrand-1.5                                                                                        
+⠧ |        138 | blockrand-1.5                                                                                        
+⠋ |        171 | blockrand-1.5                                                                                        
+⠼ |        205 | blockrand-1.5                                                                                        
+⠹ |        243 | blockrand-1.5                                                                                        
+⠙ |        272 | blockrand-1.5                                                                                        
+⠙ |        322 | blockrand-1.5                                                                                        
+⠧ |        338 | blockrand-1.5                                                                                        
+⠏ |        350 | blockrand-1.5                                                                                        
+⠸ |        364 | blockrand-1.5                                                                                        
+⠴ |        376 | blockrand-1.5                                                                                        
+⠴ |        396 | blockrand-1.5                                                                                        
+⠼ |        415 | blockrand-1.5                                                                                        
+⠋ |        431 | blockrand-1.5                                                                                        
+⠼ |        445 | blockrand-1.5                                                                                        
+⠴ |        466 | blockrand-1.5                                                                                        
+⠼ |        485 | blockrand-1.5                                                                                        
+⠙ |        502 | blockrand-1.5                                                                                        
+⠏ |        520 | blockrand-1.5                                                                                        
+⠋ |        541 | blockrand-1.5                                                                                        
+⠙ |        562 | blockrand-1.5                                                                                        
+⠴ |        576 | blockrand-1.5                                                                                        
+⠦ |        597 | blockrand-1.5                                                                                        
+⠼ |        615 | blockrand-1.5                                                                                        
+⠋ |        631 | blockrand-1.5                                                                                        
+⠇ |        649 | blockrand-1.5                                                                                        
+⠧ |        668 | blockrand-1.5                                                                                        
+⠧ |        688 | blockrand-1.5                                                                                        
+⠹ |        703 | blockrand-1.5                                                                                        
+⠋ |        721 | blockrand-1.5                                                                                        
+⠴ |        736 | blockrand-1.5                                                                                        
+⠼ |        755 | blockrand-1.5                                                                                        
+⠙ |        772 | blockrand-1.5                                                                                        
+⠙ |        792 | blockrand-1.5                                                                                        
+⠧ |        808 | blockrand-1.5                                                                                        
+⠋ |        821 | blockrand-1.5                                                                                        
+⠸ |        854 | blockrand-1.5                                                                                        
+⠦ |        897 | blockrand-1.5                                                                                        
+⠦ |        937 | blockrand-1.5                                                                                        
+⠹ |        973 | blockrand-1.5                                                                                        
+⠸ |        984 | blockrand-1.5                                                                                        
+✔ |        987 | blockrand-1.5 [4.8s]
+
+══ Results ═══════════════════════════════════════════════════════════════════════════════════════════════════════════
+Duration: 4.8 s
+
+[ FAIL 0 | WARN 0 | SKIP 0 | PASS 987 ]
+## Copy and paste the following output into the indicated sections of a new issue
+
+ISSUE NAME: 
+[Package test]: blockrand version 1.5 
+
+### Name 
+Samirainnocente 
+
+### Name of the package you have validated 
+blockrand 
+
+### What version of the package have you validated? 
+1.5 
+
+### Where was the package from? 
+CRAN (R 4.6.0) 
+
+### Package repository version reference
+NA 
+
+### When was this package tested? 
+2026-08-27 
+
+### What was tested? 
+Tests for package blockrand version 1.5 
+  
+ Tests for the blockrand() function for the intended use: 
+ - two treatment arms with 1:1 allocation 
+ - stratified block randomisation with four strata 
+ - varying actual block sizes of 2 and 4 
+ - reproducibility 
+ - comparison of block-level allocation with randomizr 
+ 
+
+### Test results 
+PASS 
+
+### Test output:
+
+
+|file                 |context       |test                                                                              |  nb| passed|skipped |error | warning|
+|:--------------------|:-------------|:---------------------------------------------------------------------------------|---:|------:|:-------|:-----|-------:|
+|test-blockrand-1.5.R |blockrand-1.5 |blockrand returns the expected output structure                                   |   4|      4|FALSE   |FALSE |       0|
+|test-blockrand-1.5.R |blockrand-1.5 |actual block size 2 gives one allocation to each treatment                        |  30|     30|FALSE   |FALSE |       0|
+|test-blockrand-1.5.R |blockrand-1.5 |actual block size 4 gives two allocations to each treatment                       |  15|     15|FALSE   |FALSE |       0|
+|test-blockrand-1.5.R |blockrand-1.5 |only actual block sizes 2 and 4 are generated                                     |   1|      1|FALSE   |FALSE |       0|
+|test-blockrand-1.5.R |blockrand-1.5 |both actual block sizes 2 and 4 occur with the fixed seed                         |   1|      1|FALSE   |FALSE |       0|
+|test-blockrand-1.5.R |blockrand-1.5 |actual block size equals the number of allocations in each block                  |  80|     80|FALSE   |FALSE |       0|
+|test-blockrand-1.5.R |blockrand-1.5 |varying block sizes 2 and 4 maintain 1:1 allocation within each block             |  40|     40|FALSE   |FALSE |       0|
+|test-blockrand-1.5.R |blockrand-1.5 |block.sizes 1, 2 and 3 produce correctly balanced blocks                          | 165|    165|FALSE   |FALSE |       0|
+|test-blockrand-1.5.R |blockrand-1.5 |all four strata are generated                                                     |   1|      1|FALSE   |FALSE |       0|
+|test-blockrand-1.5.R |blockrand-1.5 |generated randomisation lists contain at least 120 positions per stratum          |   1|      1|FALSE   |FALSE |       0|
+|test-blockrand-1.5.R |blockrand-1.5 |only actual block sizes 2 and 4 occur across strata                               |   1|      1|FALSE   |FALSE |       0|
+|test-blockrand-1.5.R |blockrand-1.5 |both actual block sizes 2 and 4 occur across strata with the fixed seed           |   1|      1|FALSE   |FALSE |       0|
+|test-blockrand-1.5.R |blockrand-1.5 |each block is internally consistent within every stratum                          | 480|    480|FALSE   |FALSE |       0|
+|test-blockrand-1.5.R |blockrand-1.5 |treatment allocation is 1:1 within every complete block and stratum               | 160|    160|FALSE   |FALSE |       0|
+|test-blockrand-1.5.R |blockrand-1.5 |exactly 120 allocations per stratum are used                                      |   1|      1|FALSE   |FALSE |       0|
+|test-blockrand-1.5.R |blockrand-1.5 |treatment imbalance at n = 120 is limited within each stratum                     |   1|      1|FALSE   |FALSE |       0|
+|test-blockrand-1.5.R |blockrand-1.5 |randomisation with block size 2 is reproducible with the same seed                |   1|      1|FALSE   |FALSE |       0|
+|test-blockrand-1.5.R |blockrand-1.5 |randomisation with block size 4 is reproducible with the same seed                |   1|      1|FALSE   |FALSE |       0|
+|test-blockrand-1.5.R |blockrand-1.5 |randomisation with varying block sizes 2 and 4 is reproducible with the same seed |   1|      1|FALSE   |FALSE |       0|
+|test-blockrand-1.5.R |blockrand-1.5 |block size 2 agrees with independent implementation                               |   1|      1|FALSE   |FALSE |       0|
+|test-blockrand-1.5.R |blockrand-1.5 |block size 4 agrees with independent implementation                               |   1|      1|FALSE   |FALSE |       0|
+
+### SessionInfo:
+R version 4.6.1 (2026-06-24 ucrt)
+Platform: x86_64-w64-mingw32/x64
+Running under: Windows 11 x64 (build 26200)
+
+Matrix products: default
+  LAPACK version 3.12.1
+
+locale:
+[1] LC_COLLATE=German_Switzerland.utf8  LC_CTYPE=German_Switzerland.utf8    LC_MONETARY=German_Switzerland.utf8
+[4] LC_NUMERIC=C                        LC_TIME=German_Switzerland.utf8    
+
+time zone: Europe/Zurich
+tzcode source: internal
+
+attached base packages:
+[1] stats     graphics  grDevices utils     datasets  methods   base     
+
+other attached packages:
+[1] SCTORvalidation_0.4.5 testthat_3.3.2        randomizr_1.0.1       blockrand_1.5        
+
+loaded via a namespace (and not attached):
+ [1] jsonlite_2.0.0    dplyr_1.2.1       compiler_4.6.1    crayon_1.5.3      gitcreds_0.1.2    brio_1.1.5       
+ [7] tidyselect_1.2.1  stringr_1.6.0     tidyr_1.3.2       fastmap_1.2.0     readr_2.2.0       R6_2.6.1         
+[13] generics_0.1.4    curl_7.1.0        httr2_1.2.3       knitr_1.51        conflicted_1.2.0  tibble_3.3.1     
+[19] desc_1.4.3        cranlogs_2.1.1    rprojroot_2.1.1   pkgsearch_3.1.5   lubridate_1.9.5   tzdb_0.5.0       
+[25] pillar_1.11.1     rlang_1.3.0       stringi_1.8.7     cachem_1.1.0      xfun_0.59         pkgload_1.5.3    
+[31] otel_0.2.0        timechange_0.4.0  memoise_2.0.1     cli_3.6.6         withr_3.0.3       magrittr_2.0.5   
+[37] gh_1.6.0          rstudioapi_0.18.0 rappdirs_0.3.4    hms_1.1.4         lifecycle_1.0.5   waldo_0.6.2      
+[43] vctrs_0.7.3       evaluate_1.0.5    glue_1.8.1        sessioninfo_1.2.4 purrr_1.2.2       httr_1.4.8       
+[49] tools_4.6.1       pkgconfig_2.0.3  
+
+
+### Where is the test code located for these tests?
+CRM Central Repository/Software/R Package Validation/blockrand/test-blockrand-1.5.R
+
+### Where the test code is located in a git repository, add the git commit SHA
+88cf644

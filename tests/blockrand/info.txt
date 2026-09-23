@@ -1,0 +1,8 @@
+Tests for package blockrand version 1.5
+
+Tests for the blockrand() function for the intended use:
+- two treatment arms with 1:1 allocation
+- stratified block randomisation with four strata
+- varying actual block sizes of 2 and 4
+- reproducibility
+- comparison of block-level allocation with randomizr
