@@ -1,0 +1,5 @@
+if(!require(blockrand)) install.packages('blockrand')
+if(!require(randomizr)) install.packages('randomizr')
+library(blockrand)
+library(randomizr)
+library(testthat)
